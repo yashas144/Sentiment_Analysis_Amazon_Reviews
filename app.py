@@ -2,6 +2,7 @@ import gradio as gr
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 from scipy.special import softmax
 import nltk
+nltk.download('vader_lexicon')
 from nltk.sentiment import SentimentIntensityAnalyzer
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -117,4 +118,4 @@ iface = gr.Interface(
 
 # Launch the app
 if __name__ == "__main__":
-    iface.launch()
+    iface.launch(server_name="0.0.0.0", server_port=8080)
