@@ -1,0 +1,8 @@
+gradio
+transformers
+torch
+nltk
+scipy
+pandas
+matplotlib
+seaborn
